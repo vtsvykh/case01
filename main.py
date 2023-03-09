@@ -5,6 +5,7 @@ Tsvykh Viktoria
 Fishchukova Sofia
 '''
 
+import turtle
 def triangle(x, y, a, b, angle, color):
     '''
     Function for drawing triangle.
@@ -19,27 +20,46 @@ def triangle(x, y, a, b, angle, color):
 
     pass
 
-def ellipse(x, y, a, b, color):
+def ellipse(x, y, a, b, color, fill, pensize):
     '''
     Function for draw ellipse.
-    :param x:
-    :param y:
-    :param a:
-    :param b:
-    :param color:
+    :param x: x start coordinate
+    :param y: y start coordinate
+    :param a: axis length on x-axis
+    :param b: axis length on y-axis
+    :param color: stroke color
+    :param fill: fill color
+    :param pensize: pensize
     :return:
     '''
 
-    pass
+    turtle.color(color, fill)
+    turtle.begin_fill()
+    turtle.pensize()
+    turtle.pu()
+    turtle.goto(x, y)
+    turtle.rt(45)
+    turtle.pd()
 
-def rectangle(x, y, a, b, color):
+    for i in range(2):
+        turtle.circle(a, 90)
+        turtle.circle(b, 90)
+
+    turtle.end_fill()
+    turtle.done()
+
+
+def rectangle(x, y, a, b, angle1, angle2, color, fill):
     '''
-    Function for draw rectangle.
+    Function for draw quadrilateral.
     :param x:
     :param y:
     :param a:
     :param b:
+    :param angle1:
+    :param angle2:
     :param color:
+    :param fill:
     :return:
     '''
 
