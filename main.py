@@ -49,21 +49,34 @@ def ellipse(x, y, a, b, color, fill, pensize):
     turtle.done()
 
 
-def rectangle(x, y, a, b, angle1, angle2, color, fill):
+def quadrilateral(x, y, a, b, angle1, angle2, color, fill):
     '''
     Function for draw quadrilateral.
-    :param x:
-    :param y:
-    :param a:
-    :param b:
-    :param angle1:
-    :param angle2:
-    :param color:
-    :param fill:
+    :param x:      x start coordinate
+    :param y:      y start coordinate
+    :param a:      length of side parallel to x-axis
+    :param b:      length of side parallel to y-axis
+    :param angle1: bottom right and top left angles
+    :param angle2: top right and bottom left angles
+    :param color:  stroke color
+    :param fill:   fill color
     :return:
     '''
 
-    pass
+    turtle.color(color, fill)
+    turtle.begin_fill()
+    turtle.pu()
+    turtle.goto(x, y)
+    turtle.pd()
+
+    for i in range(2):
+        turtle.fd(a)
+        turtle.lt(angle1)
+        turtle.fd(b)
+        turtle.lt(angle2)
+
+    turtle.end_fill()
+    turtle.done()
 
 
 def draw_elephant():
