@@ -6,6 +6,8 @@ Fishchukova Sofia
 '''
 
 import turtle
+
+
 def triangle(x, y, a, angle, color,fill):
     '''
     Function for drawing triangle.
