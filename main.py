@@ -61,9 +61,9 @@ def ellipse(x, y, a, b, color, fill, pensize):
     turtle.done()
 
 
-def quadrilateral(x, y, a, b, angle1, angle2, color, fill):
+def parallelogram(x, y, a, b, angle1, angle2, color, fill):
     '''
-    Function for draw quadrilateral.
+    Function for draw parallelogram.
     :param x:      x start coordinate
     :param y:      y start coordinate
     :param a:      length of side parallel to x-axis
@@ -88,7 +88,7 @@ def quadrilateral(x, y, a, b, angle1, angle2, color, fill):
         turtle.lt(angle2)
 
     turtle.end_fill()
-    turtle.done()
+
 
 
 def draw_elephant():
