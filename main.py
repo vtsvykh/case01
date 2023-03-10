@@ -91,8 +91,8 @@ def parallelogram(x, y, a, b, angle1, angle2, color, fill):
 
 
 
-def draw_elephant():
-    '''Drawing funny elephant on big ball'''
+def draw_fox():
+    '''Drawing fox on big ball'''
 
     pass
 
